@@ -1,0 +1,5 @@
+body {font-family: Arial; margin: 20px;}
+
+.flex-container {display: flex; flex-direction: column; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;}
+
+p {background-color: #f0f0f0; padding: 15px; border-radius: 5px; width: 100%; max-width: 600px;}
