@@ -1,0 +1,28 @@
+table {
+  width: 40%;
+  margin-top: 20px;
+  border-collapse: collapse; /* Collapse the borders */
+}
+
+table td:first-child {
+  background-color: #687886; 
+  color: white; 
+  font-weight: bold; 
+  padding: 10px;
+}
+
+td {
+  background-color: powderblue;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
