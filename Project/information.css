@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Video */
+.video-container {
+    position: relative;
+    width: 100%;            /* Full width of the parent */
+    padding-top: 30%;    /* 16:9 Aspect Ratio (height / width * 100) */
+    overflow: hidden;       /* Prevents overflow */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;           /* Full width */
+    height: 100%;          /* Full height */
+    border: 0;             /* Removes the border */
+}
+
+
+/* Body Styling */
+body {
+    font-family: Arial;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.flex-container p{
+    font-size: 1.5rem;
+    color:red;
+    text-align: center;
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 2rem 2rem;
+
+    position: sticky;                         /* Makes the header stick at the top */
+    top: 0;                                   /* Sticks the header to the top of the viewport */
+    z-index: 1000;                            /* Keeps the header above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFD9E5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+h1 {
+    color: gold;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFD9E5;
+    color: black;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+
+

@@ -1,0 +1,84 @@
+<html>
+<head>
+<link rel="icon" href="sunflower.jpg" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SunsetTrip - Tour Highlights</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>     
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html"><font size=5>Home</font></a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="tour_highlights.html">Tour Highlights</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html"><font size=5>Contact Us</font></a></li>
+            </ul>
+        </nav>
+</header>
+
+    <!-- Contact Us Section -->
+    <section class="contact-us-section">
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><strong>Phone:</strong><br> +6016-888-8888</p>
+            <p><strong>Email:</strong> rxcompany@gmail.com</p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Form</h2>
+<form action="submit_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Enquiry:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="submit-button">Submit</button>
+                </div>
+        </div>
+</form>
+    </section>
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+
+        <div class="social-icons">
+            <h3>Supported Company</h3>
+            <a href="https://www.booking.com/" target="_blank"><img src="BK.jpg" alt="Booking"></a>
+            <a href="https://www.agoda.com/" target="_blank"><img src="AG.jpg" alt="Agoda"></a>
+            <a href="https://www.kayak.com/" target="_blank"><img src="KY.jpg" alt="Kayak"></a>
+        </div>
+
+        <div class="social-icons">
+            <h3>FOLLOW US</h3>
+            <a href="https://www.facebook.com/" target="_blank"><img src="fb.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="ig.jpg" alt="Instagram"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="yb.jpg" alt="YouTube"></a>
+        </div>
+    </div>
+<p>All material herein © 2002–2024 RX Company Pte. Ltd. All Rights Reserved.<br>
+
+SunsetTrip is part of Booking Holdings Inc., the world leader in online travel & related services.<br>
+
+For flights booked in or to Malaysia: Corporate Information Travel Sdn. Bhd., Malaysian travel agency licence KPK/LN: 8888<br></p>
+</footer>
+</body>
+</html>

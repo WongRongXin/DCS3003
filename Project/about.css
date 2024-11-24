@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+body {
+    font-family: Arial;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#hero {
+  text-align: center;
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+#overview, #timeline, #values, #team, #contact {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.value-box {
+  background: #e0e0e0;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 2rem 2rem;
+
+    position: sticky;                         /* Makes the header stick at the top */
+    top: 0;                                   /* Sticks the header to the top of the viewport */
+    z-index: 1000;                            /* Keeps the header above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFD9E5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+h1 {
+    color: gold;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFD9E5;
+    color: black;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+footer p {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+
+

@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 2rem 2rem;
+
+    position: sticky; /* Makes the header stick at the top */
+    top: 0; /* Sticks the header to the top of the viewport */
+    z-index: 1000; /* Keeps the header above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #FFD9E5;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+/* Contact Us Section */
+.contact-us-section {
+    padding: 2rem;
+    max-width: 700px;
+    margin: 2em auto;
+    background-color: #fff;
+    border: 4px solid #563158;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.contact-info {
+    width: 40%;
+}
+
+.contact-info h2 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    width: 55%;
+}
+
+.contact-form h2 {
+    color: gold;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #FFD9E5;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border-color: black;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    margin: 0 auto;
+}
+
+.submit-button:hover {
+    background-color: aqua;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #563158;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.address-info, .footer-links, .social-icons {
+    width: 30%;
+    min-width: 250px;
+}
+
+.address-info h3, .footer-links h3, .social-icons h3 {
+    margin-bottom: 1rem;
+}
+
+.address-info p, .footer-links ul, .social-icons a {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FFD9E5;
+    color: black;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+    border:4px solid black;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .contact-us-section {
+        flex-direction: column;
+        padding: 2rem;
+        width:85%;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .address-info, .footer-links, .social-icons {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
+}
